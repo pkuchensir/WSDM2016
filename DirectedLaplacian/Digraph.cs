@@ -60,8 +60,8 @@ namespace DirectedLaplacian
 				var words = line.Split ();
 
 				if (words.Length >= 2) {
-					var u = int.Parse (words [0]) - 1;
-					var v = int.Parse (words [1]) - 1;
+					var u = int.Parse (words [0]);
+					var v = int.Parse (words [1]);
 					if (u == v)
 						continue;
 

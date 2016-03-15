@@ -1,6 +1,12 @@
 ﻿<Properties StartupItem="DirectedLaplacian/DirectedLaplacian.csproj" RefactoringSettings.EnableRefactorings="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DirectedLaplacian/Laplacian.cs">
+    <Files>
+      <File FileName="DirectedLaplacian/Program.cs" Line="1" Column="1" />
+      <File FileName="DirectedLaplacian/Digraph.cs" Line="64" Column="35" />
+      <File FileName="DirectedLaplacian/Laplacian.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
