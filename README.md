@@ -11,8 +11,10 @@ Vertices should be numbered from zero.
 The program computes (an approximation to) the second eigenvector by applying Euler's method to the heat equation (see the reference for details).
 The parameter &lt;dt&gt; and &lt;T&gt; determine the time resolution and the number of iterations in the simulation, respectively.
 The default values are 1 and 1000, respectively.
+
 We use the normalized directed Laplacian if &lt;normalized&gt; is "true" and the (unnormalized) directed Laplacian if &lt;normalized&gt; is false.
 The default value is false.
+
 The parameter &lt;seed&gt;, which should be specified by an integer, is a seed parameter for a random number generator.
 The default value is zero.
 
