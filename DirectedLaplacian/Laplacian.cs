@@ -43,7 +43,7 @@ namespace DirectedLaplacian
 
 			var res = new double[G.n];
 			for (int u = 0; u < G.n; u++) {
-				res [u] = xs [u] * (G.OutDegree (u) + G.InDegree (u));
+				res [u] = xs [u] * G.Degree (u);
 				foreach (var v in G.OutNeighbors[u]) {
 					if (xs [u] > xs [v]) {
 						res [u] -= xs [v];

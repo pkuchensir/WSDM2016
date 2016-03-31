@@ -12,7 +12,7 @@ namespace DirectedLaplacian
 			set;
 		}
 
-		[CommandLine.Option("dt", DefaultValue=1)]
+		[CommandLine.Option("dt", DefaultValue=0.1)]
 		public double dt {
 			get;
 			set;
@@ -55,6 +55,11 @@ namespace DirectedLaplacian
 				NormalizedLaplacian.SecondEigenvector (G, opts.dt, opts.T) :
 				Laplacian.SecondEigenvector (G, opts.dt, opts.T);
 
+			double rq = opts.normalied ?
+				NormalizedLaplacian.RayleighQuotient (G, xs) :
+				Laplacian.RayleighQuotient (G, xs);
+
+			Console.Error.WriteLine ($"Rayleigh quotient = {rq}");
 			for (int i = 0; i < G.n; i++) {
 				Console.WriteLine($"{xs[i]}");
 			}
