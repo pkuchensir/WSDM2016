@@ -2,7 +2,7 @@
 A library for computing (an approximation to) the second eigenvector of the directed Laplacian of a directed network.
 
 ## Usage
-    mono -i <input> -dt <dt> -T <T> -normalized <normalized> -seed <seed>
+    mono DirectedLaplacian.exe -i <input> -dt <dt> -T <T> -normalized <normalized> -seed <seed>
 
 See the source code to figure out how to use the library from your program.
 In the graph file (&lt;input&gt;), each line should contain two vertices (see Data/sample.edges).
